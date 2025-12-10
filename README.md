@@ -5,23 +5,23 @@
 
 ### 1. Introduction
 
--   [What are Image Processing and Computer Vision?](part1/introduction/blog1/README.md)
+-   [What are Image Processing and Computer Vision?](part1/introduction/what-ip-and-cv/README.md)
     
--   Relationship between IP and CV  
+-   [Relationship between IP and CV](part1/introduction/relationship-ip-and-cv/README.md)
     
--   Historical milestones: from analog images to AI-driven vision  
+-   Historical milestones: from analog images to AI-driven vision
       
     
--   Key applications: enhancement, detection, segmentation, generation  
+-   Key applications: enhancement, detection, segmentation, generation
       
     
--   Overview of modern CV/IP ecosystem (OpenCV, PyTorch, TensorFlow, etc.)  
+-   Overview of modern CV/IP ecosystem (OpenCV, PyTorch, TensorFlow, etc.)
       
     
 
 ### 2. Digital Image Fundamentals
 
--   Image representation: pixels, channels, and color spaces (RGB, HSV, Lab, YCbCr)  
+-   [Image representation: pixels, channels, and color spaces](part1/digital-image-fundamentals/pixels-channels-spaces/README.md)
     
 -   Bit depth, dynamic range, and image formats  
       
