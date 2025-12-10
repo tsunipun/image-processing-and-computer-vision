@@ -9,7 +9,7 @@
     
 -   [Relationship between IP and CV](part1/introduction/relationship-ip-and-cv/README.md)
     
--   Historical milestones: from analog images to AI-driven vision
+-   [Historical milestones: from analog images to AI-driven vision](part1/introduction/history/README.md)
       
     
 -   Key applications: enhancement, detection, segmentation, generation
