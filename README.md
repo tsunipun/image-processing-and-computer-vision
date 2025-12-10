@@ -68,7 +68,8 @@
 -   Filtering: mean, median, bilateral, Wiener  
       
     
--   Image deblurring, inverse filtering, and deconvolution  
+-   Image deblurring, inverse filtering, and deconvolution
+- [Image Compression & JPEG](part2/image-enhance-restore/jpeg/README.md)
       
     
 
