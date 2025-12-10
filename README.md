@@ -5,7 +5,7 @@
 
 ### 1. Introduction
 
--   What are Image Processing and Computer Vision?  
+-   [What are Image Processing and Computer Vision?](part1/introduction/blog1/README.md)
     
 -   Relationship between IP and CV  
     
