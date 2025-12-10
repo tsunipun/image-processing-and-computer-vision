@@ -14,7 +14,7 @@
 -   [Key applications: enhancement, detection, segmentation, generation](part1/introduction/applications/README.md)
       
     
--   Overview of modern CV/IP ecosystem (OpenCV, PyTorch, TensorFlow, etc.)
+-   [Overview of modern CV/IP ecosystem (OpenCV, PyTorch, TensorFlow, etc.)](part1/introduction/overview/README.md)
       
     
 
