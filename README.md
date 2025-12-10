@@ -11,8 +11,7 @@
     
 -   [Historical milestones: from analog images to AI-driven vision](part1/introduction/history/README.md)
       
-    
--   Key applications: enhancement, detection, segmentation, generation
+-   [Key applications: enhancement, detection, segmentation, generation](part1/introduction/applications/README.md)
       
     
 -   Overview of modern CV/IP ecosystem (OpenCV, PyTorch, TensorFlow, etc.)
