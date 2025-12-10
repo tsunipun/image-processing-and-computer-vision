@@ -15,7 +15,7 @@ JPEG became a standard in the early 1990s because it offered a good mix of image
 
 Even today, with faster networks and better image formats available, JPEG is still used a lot. It works on almost every device and software, and its compression is still good enough for most purposes. So if you work with digital images, whether in apps, websites, or computer vision, understanding JPEG is essential.
 
-![captionless image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*2y_jo6ag5jpeEWjRvpNS9w.png)
+![History trend](images/history-trend.webp)
 
 Also, JPEG didn’t just change how we store photos. It influenced how we compress videos too. Modern video formats like H.264 use similar ideas, such as chrominance downsampling, the Discrete Cosine Transform (DCT), and quantization. These shared concepts show how important JPEG is, not just for still images but for the entire field of visual media compression.
 
@@ -28,7 +28,7 @@ JPEG compression works by analyzing each small block of the image and removing d
 
 As the quality setting decreases, the resolution (number of pixels) of the image stays the same, but visual distortions called **compression artifacts** start to appear. These often look like blocky squares across the image. These artifacts are a clear sign that the image has been compressed aggressively using JPEG.
 
-![captionless image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*soxw_ohcaD6q2B2a4tUcfA.jpeg)
+![Compression quality](images/compression-quality.webp)
 
 The Five Key Steps of JPEG Compression
 --------------------------------------
@@ -61,7 +61,7 @@ This is the first step where JPEG takes advantage of how the human eye works to 
 
 JPEG uses this fact through a process called **chrominance downsampling**. It reduces the resolution of the Cb and Cr channels. A common method is to group each 2x2 block of chrominance pixels and replace it with their average color. This reduces the amount of chrominance data to one-quarter, while the luminance data stays untouched.
 
-![captionless image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*YZ4uS7rQIg0miAoAcgdsaw.jpeg)
+![Chroma subsample](images/chroma-subsample.webp)
 
 Later, during decompression, the lower-resolution chrominance is scaled back up to match the full image size. This causes some loss in color detail, but because the human eye doesn’t notice small color shifts as much, the result still looks very close to the original. By this point, JPEG has already cut down the image data by almost half, with very little visible quality loss.
 
@@ -73,7 +73,7 @@ JPEG uses a trick to find these high-frequency elements. It divides the image in
 
 Think of the DCT like taking each 8x8 block and breaking it down into a set of 64 basic patterns. Each pattern has a different “frequency.” Some patterns change slowly across the block (low frequency), and some change very quickly (high frequency). The DCT tells us how much of each of these 64 patterns is needed to recreate the original 8x8 block.
 
-![captionless image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*PksCDHsc-u40YMmu9zKhOQ.png)
+![zigzag](images/zigzag.webp)
 
 After the DCT, we have 64 numbers for each 8x8 block. These numbers represent how much of each of the 64 patterns is present.
 
@@ -87,7 +87,7 @@ Why do we do this? Because the bigger numbers in the quantization table make the
 
 We also use a different quantization table for the color information. This table usually has even bigger numbers, meaning we throw away even more of the fine color details.
 
-![captionless image](https://miro.medium.com/v2/resize:fit:1052/format:webp/1*9UrS8rr1Nl1dnKb4deOgyQ.png)
+![quantize table](images/quantize.webp)
 
 > _So, after the DCT and quantization, each 8x8 block is now represented by a set of 64 numbers, but many of the numbers, especially those related to high-frequency details, are now zero or very small. This is how JPEG achieves much of its compression._
 
@@ -99,7 +99,7 @@ First, the numbers are arranged in a zigzag pattern. This is because after quant
 
 Next, “run length encoding” is used. Instead of listing out many zeros in a row, we just say how many zeros there are. For example, instead of “0, 0, 0, 5, 0, 0,” we might say “(3 zeros), 5, (2 zeros).” This saves space.
 
-![captionless image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*z2HvCMwxSEf1rm2oVJ0mMw.png)
+![run length encoding](images/run-length-encoding.webp)
 
 Finally, **Huffman Encoding** is a statistical lossless data compression algorithm. It assigns shorter binary codes to more frequently occurring symbols (in this case, the DC coefficients, AC coefficients, and run-length encoded zero counts) and longer binary codes to less frequently occurring symbols. This variable-length coding further reduces the overall file size. The Huffman tables used for luminance and chrominance components are often standardized or can be included within the JPEG file.
 
