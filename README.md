@@ -230,7 +230,7 @@
 -   Diffusion models and Stable Diffusion  
       
     
--   Image super-resolution, denoising, deblurring, and inpainting  
+- [Image super-resolution, denoising, deblurring, and inpainting](part4/image-gen-and-enhance/sr.md)
       
     
 
